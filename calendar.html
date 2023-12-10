@@ -34,7 +34,7 @@
 
 					<div id="dropdown" class="dropdown">
 						<div class="dropdown-content" onclick="openModal()">Join Class</div>
-						<div class="dropdown-content" onclick="openSmallModal()">
+						<div class="dropdown-content" onclick="openModal2()">
 							Create New Class
 						</div>
 					</div>
@@ -128,11 +128,11 @@
 			<div class="main">
 				<div class="calendar-main">
 					<img src="assets/ri_arrow-left-s-line.svg" class="button-image" />
-					<span> Des 3 - Des 9 2023 </span>
+					<span>December 2023</span>
 					<img src="assets/ri_arrow-right-s-line.svg" class="button-image" />
 				</div>
 				<div class="grid-calendar">
-					<div class="grid-item flex-col-4 border-left-top">
+					<!-- <div class="grid-item flex-col-4 border-left-top">
 						<p class="day">Sat</p>
 						<h4 class="date">3</h4>
 					</div>
@@ -159,7 +159,51 @@
 					<div class="grid-item flex-col-4 border-right-top">
 						<p class="day">Fri</p>
 						<h4 class="date">9</h4>
-					</div>
+					</div> -->
+					<div class="day">Sun</div>
+					<div class="day">Mon</div>
+					<div class="day">Tue</div>
+					<div class="day">Wed</div>
+					<div class="day">Thu</div>
+					<div class="day">Fri</div>
+					<div class="day">Sat</div>
+
+					<!-- Days for December 2023 (adjust based on the month) -->
+					<div class="date"></div>
+					<div class="date"></div>
+					<div class="date"></div>
+					<div class="date"></div>
+					<div class="date">1</div>
+					<div class="date">2</div>
+					<div class="date">3</div>
+					<div class="date">4</div>
+					<div class="date">5</div>
+					<div class="date">6</div>
+					<div class="date">7</div>
+					<div class="date">8</div>
+					<div class="date">9</div>
+					<div class="date">10</div>
+					<div class="date">11</div>
+					<div class="date">12</div>
+					<div class="date">13</div>
+					<div class="date">14</div>
+					<div class="date">15</div>
+					<div class="date">16</div>
+					<div class="date">17</div>
+					<div class="date">18</div>
+					<div class="date">19</div>
+					<div class="date">20</div>
+					<div class="date">21</div>
+					<div class="date">22</div>
+					<div class="date">23</div>
+					<div class="date">24</div>
+					<div class="date">25</div>
+					<div class="date">26</div>
+					<div class="date">27</div>
+					<div class="date">28</div>
+					<div class="date">29</div>
+					<div class="date">30</div>
+					<div class="date">31</div>
 				</div>
 			</div>
 		</div>
@@ -176,87 +220,39 @@
 				</div>
 				<div class="modal-body">
 					<div class="modal-body-content border-content">
-						<span class="text-left">Currently, you are logged in as</span>
-						<div
-							style="
-								display: flex;
-								flex-direction: row;
-								justify-content: space-between;
-								align-items: center;
-							"
-						>
-							<div
-								style="
-									display: flex;
-									flex-direction: row;
-									gap: 16px;
-									align-items: center;
-									justify-content: center;
-								"
-							>
-								<img src="assets/mdi_account.svg" style="width: 40px" />
-								<div
-									style="
-										display: flex;
-										flex-direction: column;
-										gap: 4px;
-										align-items: start;
-									"
-								>
-									<p>John Doe</p>
-									<span>johndoe@gmail.com</span>
-								</div>
-							</div>
-							<a href="#" class="button"> Change Account </a>
-						</div>
-					</div>
-
-					<div class="modal-body-content border-content">
 						<span style="text-align: left">Class Code</span>
 						<p style="text-align: left; font-size: 12px">
 							Ask the teacher for the Class Code, then enter the code here.
 						</p>
 						<input type="text" class="input-text" placeholder="Class Code" />
 					</div>
-					<div class="modal-body-content">
-						<span class="text-left">To log in, use the Class Code.</span>
-						<ul>
-							<li class="text-left">Use an authorized account.</li>
-							<li class="text-left">
-								Use a Class Code consisting of 5-7 letters or numbers, without
-								spaces or symbols.
-							</li>
-						</ul>
-						<p class="text-left text-12">
-							If you experience issues joining the class, open
-							<span>Help Center</span>
-						</p>
-					</div>
 				</div>
 			</div>
 		</div>
 
-		<div id="smallModal" class="overlay">
-			<div class="small-modal">
-				<p>Create Class</p>
-				<div class="small-modal__content">
-					<input
-						type="text"
-						placeholder="Class name (required)"
-						class="input-text"
-					/>
-					<input type="text" placeholder="Section" class="input-text" />
-					<input type="text" placeholder="Subject" class="input-text" />
-					<input type="text" placeholder="Room" class="input-text" />
+		<div id="myModal2" class="overlay">
+			<div class="modal">
+				<div class="modal-header">
+					<div class="modal-header-content">
+						<div class="button-image" onclick="closeModal2()">
+							<img src="assets/octicon_x-16.svg" />
+						</div>
+						<span class="text-logo-nav">Create Class</span>
+					</div>
+					<a href="#" class="button"> Gabung </a>
 				</div>
-				<div class="small-modal__footer">
-					<a
-						class="a-none-decarator a-pointer text-14"
-						onclick="closeSmallModal()"
-					>
-						Cancel
-					</a>
-					<a href="#" class="a-none-decarator button text-12">Create</a>
+				<div class="modal-body">
+					<div class="modal-body-content border-content">
+						<input
+							type="text"
+							placeholder="Class name (required)"
+							class="input-text"
+						/>
+						<input type="text" placeholder="Section" class="input-text" />
+						<input type="text" placeholder="Subject" class="input-text" />
+						<input type="text" placeholder="Room" class="input-text" />
+						<a href="#" class="a-none-decarator button text-12">Create</a>
+					</div>
 				</div>
 			</div>
 		</div>

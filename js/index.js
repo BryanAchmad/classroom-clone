@@ -14,6 +14,14 @@ function openModal() {
 		console.error("Modal element not found!");
 	}
 }
+function openModal2() {
+	var modal = document.getElementById("myModal2");
+	if (modal) {
+		modal.style.display = "flex";
+	} else {
+		console.error("Modal element not found!");
+	}
+}
 
 function closeModal() {
 	var modal = document.getElementById("myModal");
@@ -23,13 +31,13 @@ function closeModal() {
 		console.error("Modal element not found!");
 	}
 }
-
-function openSmallModal() {
-	document.getElementById("smallModal").style.display = "flex";
-}
-
-function closeSmallModal() {
-	document.getElementById("smallModal").style.display = "none";
+function closeModal2() {
+	var modal = document.getElementById("myModal2");
+	if (modal) {
+		modal.style.display = "none";
+	} else {
+		console.error("Modal element not found!");
+	}
 }
 
 window.onclick = function (event) {
@@ -38,10 +46,14 @@ window.onclick = function (event) {
 		closeModal();
 	}
 
-	if (event.target === document.getElementById("smallModal")) {
-		closeSmallModal();
+	var modal2 = document.getElementById("myModal2");
+	if (modal2 && event.target === modal2) {
+		closeModal2();
 	}
 };
+// window.onclick = function (event) {
+
+// };
 
 function toggleDropdown() {
 	var dropdown = document.getElementById("dropdown");
