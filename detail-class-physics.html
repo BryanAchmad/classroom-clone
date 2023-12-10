@@ -125,40 +125,76 @@
 					</div>
 				</nav>
 			</div>
-			<div class="main">
-				<div class="calendar-main">
-					<img src="assets/ri_arrow-left-s-line.svg" class="button-image" />
-					<span> Des 3 - Des 9 2023 </span>
-					<img src="assets/ri_arrow-right-s-line.svg" class="button-image" />
-				</div>
-				<div class="grid-calendar">
-					<div class="grid-item flex-col-4 border-left-top">
-						<p class="day">Sat</p>
-						<h4 class="date">3</h4>
-					</div>
-					<div class="grid-item flex-col-4">
-						<p class="day">Sun</p>
-						<h4 class="date">4</h4>
-					</div>
-					<div class="grid-item flex-col-4">
-						<p class="day">Mon</p>
-						<h4 class="date">5</h4>
-					</div>
-					<div class="grid-item flex-col-4">
-						<p class="day">Tue</p>
-						<h4 class="date">6</h4>
-					</div>
-					<div class="grid-item flex-col-4">
-						<p class="day">Wed</p>
-						<h4 class="date">7</h4>
-					</div>
-					<div class="grid-item flex-col-4">
-						<p class="day">Thu</p>
-						<h4 class="date">8</h4>
-					</div>
-					<div class="grid-item flex-col-4 border-right-top">
-						<p class="day">Fri</p>
-						<h4 class="date">9</h4>
+			<div class="main-detail">
+				<div class="tabset">
+					<!-- Tab 1 -->
+					<input
+						type="radio"
+						name="tabset"
+						id="tab1"
+						aria-controls="marzen"
+						checked
+					/>
+					<label for="tab1">Stream</label>
+					<!-- Tab 2 -->
+					<input
+						type="radio"
+						name="tabset"
+						id="tab2"
+						aria-controls="rauchbier"
+					/>
+					<label for="tab2">Classwork</label>
+					<!-- Tab 3 -->
+					<input type="radio" name="tabset" id="tab3" aria-controls="dunkles" />
+					<label for="tab3">People</label>
+
+					<div class="tab-panels">
+						<section id="stream" class="tab-panel">
+							<div class="section-center">
+								<div class="header-class-detail">
+									<div class="header-class-title">
+										<h4>Physics</h4>
+										<p>Cambridge</p>
+									</div>
+								</div>
+								<div class="header-class-comment">
+									<div class="account-comment">
+										<div class="person-group">
+											<img src="assets/mdi_account.svg" />
+											<div class="detail-account-comment">
+												<h5>John</h5>
+												<span>Jun 16, 2023</span>
+											</div>
+										</div>
+										<img src="assets/menu-burger-horizontal-fill.svg" />
+									</div>
+									<div class="comment-content">
+										<p>
+											I have returned the second part of exam. Please Check.
+										</p>
+									</div>
+								</div>
+								<div class="header-class-comment">
+									<div class="account-comment">
+										<div class="person-group">
+											<img src="assets/mdi_account.svg" />
+											<div class="detail-account-comment">
+												<h5>Doe</h5>
+												<span>Jun 16, 2023</span>
+											</div>
+										</div>
+										<img src="assets/menu-burger-horizontal-fill.svg" />
+									</div>
+									<div class="comment-content">
+										<p>
+											I have returned the second part of exam. Please Check.
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section id="classroom" class="tab-panel"></section>
+						<section id="people" class="tab-panel"></section>
 					</div>
 				</div>
 			</div>

@@ -463,6 +463,13 @@ header {
 	text-align: center;
 }
 
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	width: 100%;
+	gap: 10px;
+}
+
 .grid-item-class {
 	background-color: rgba(255, 255, 255, 0.8);
 	border: 1px solid #efefef;
@@ -488,6 +495,48 @@ header {
 		#606dbc 10px,
 		#465298 10px,
 		#465298 20px
+	);
+	margin: 0;
+	padding: 0;
+	border-radius: 16px 16px 0 0;
+}
+.stripe-2 {
+	position: relative;
+	color: white;
+	background: repeating-linear-gradient(
+		45deg,
+		#872341,
+		#872341 10px,
+		#be3144 10px,
+		#be3144 20px
+	);
+	margin: 0;
+	padding: 0;
+	border-radius: 16px 16px 0 0;
+}
+.stripe-3 {
+	position: relative;
+	color: white;
+	background: repeating-linear-gradient(
+		45deg,
+		#265073,
+		#265073 10px,
+		#2d9596 10px,
+		#2d9596 20px
+	);
+	margin: 0;
+	padding: 0;
+	border-radius: 16px 16px 0 0;
+}
+.stripe-4 {
+	position: relative;
+	color: white;
+	background: repeating-linear-gradient(
+		45deg,
+		#35a29f,
+		#35a29f 10px,
+		#088395 10px,
+		#088395 20px
 	);
 	margin: 0;
 	padding: 0;
@@ -568,16 +617,43 @@ header {
 	font-weight: 400;
 	font-size: 14px;
 }
-/* 
-.tabset > label::after {
-	content: "";
-	position: absolute;
-	left: 15px;
-	bottom: 10px;
-	width: 22px;
-	height: 4px;
-	background: #8d8d8d;
-} */
+
+.calendar-main {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0 16px;
+	gap: 16px;
+}
+
+.grid-calendar {
+	display: grid;
+	grid-template-columns: repeat(7, auto);
+	width: 100%;
+	height: 100vh;
+}
+
+.flex-col-4 {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+.border-left-top {
+	border-radius: 16px 0 0 0;
+}
+.border-right-top {
+	border-radius: 0 16px 0 0;
+}
+
+.day {
+	font-size: 12px;
+}
+
+.date {
+	font-weight: 500;
+	font-size: 24px;
+}
 
 input:focus-visible + label {
 	outline: 2px solid rgba(0, 102, 204, 1);
