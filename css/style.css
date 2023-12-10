@@ -102,6 +102,12 @@ header {
 	gap: 16px;
 	align-items: center;
 }
+.main-index {
+	height: 100vh;
+	padding-top: 100px;
+	align-items: center;
+	gap: 24px;
+}
 
 .main-detail {
 	height: calc(100vh - 70px);
